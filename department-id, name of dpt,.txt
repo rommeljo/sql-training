@@ -1,0 +1,17 @@
+department-id, name of dpt,
+teachers-id, name ,tsc number, department id,
+
+
+students-id, name ,date of birth, kcpe year,  form id , class id ,
+forms-id, ,form ,class, student id ,teachers id
+classes-id, , students id ,teachers id 
+dorms-id,students id, teachers id,
+clubs-id, students id , teachers id,
+exams-id, students id ,marks scored
+subjects-id , students id , teachers id
+
+
+name of product suppliers-id, name of supplier, email, mobile number,
+products supplier- id, supplier id , name of products supplied, number of products supplied, price,date supplied
+
+
