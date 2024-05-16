@@ -1,17 +1,31 @@
-departments->id, name_of_departments,
-employees->id, names ,tsc_numbers, departments_id,
+departments=>id, name_of_departments,
+employees=>id, names ,tsc_numbers, departments_id,
+school_vehicles=>id,type_of_vehicle,vehicles_number_plate,employees_id
+school_outings=>id,destination,purpose,school_vehicles_id
+duty_rooster=>id,period,employees_id
+
+students=>id, names ,dates_of_birth, kcpe_year, forms_id , classes_id ,dorms_id,clubs_id,
+forms=>id, ,names_of_forms,number_of_students,
+classes=>id,class_name,no_of_students,employees_id
+dorms=>id,dorm_name,dorm_capacity,
+clubs=>id,club_name,no_of_students,
+
+subjects=>id ,subjects_name,no_of_students,departments_id
+schedule=>id,time,classes_id,subjects_id,employees_id
+students_subject_selections=>id,students_id,subjects_id
+
+exams_type=>id,opener,mid_term,closing_exam
+exams_results=>id,exam_type_id,students_id,subjects_id,marks,grade
+rankings=>id,overall_position,exam_type_id,students_id,overall_grade
 
 
-students->id, names ,dates_of_birth, kcpe_year, forms_id , classes_id ,subjects_id,dorms_id,clubs_id,exams_id
-forms->id, ,names_of_forms,number_of_students,
-classes->id,classes_name,no_of_students,employees_id
-dorms->id,dorms_name,dorms_capacity,
-clubs->id,clubs_name,no_of_students,
-exams->id,grades_scored,
-subjects->id ,subjects_name,no_of_students,departments_id
+parents_or_guardians=>id,names,email,phone_numbers,students_id
 
+payments=>id,payment_description,amount_paid,method_of_payment,parents_or_guardians_id,
 
-name_of_product suppliers->id, name_of_suppliers, emails, mobile_numbers,
-products_supplied->id, suppliers_id , names_of_products_supplied, number_of_products_supplied, prices,dates_supplied
+indiscipline_cases=>id,students_id,type_of_indiscipline,punishment_given,cost_of_damages,
+
+name_of_product suppliers=>id, name_of_suppliers, emails, mobile_numbers,
+products_supplied=>id, suppliers_id , names_of_products_supplied, number_of_products_supplied, prices,dates_supplied
 
 
