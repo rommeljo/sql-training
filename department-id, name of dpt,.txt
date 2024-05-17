@@ -4,11 +4,16 @@ school_vehicles=>id,type_of_vehicle,vehicles_number_plate,employees_id
 school_outings=>id,destination,purpose,school_vehicles_id
 duty_rooster=>id,period,employees_id
 
-students=>id, names ,dates_of_birth, kcpe_year, forms_id , classes_id ,dorms_id,clubs_id,
+students=>id, names ,dates_of_birth, kcpe_year, forms_id , classes_id ,dorms_id,
 forms=>id, ,names_of_forms,number_of_students,
 classes=>id,class_name,no_of_students,employees_id
 dorms=>id,dorm_name,dorm_capacity,
+
 clubs=>id,club_name,no_of_students,
+students_club_selections=>id,students_id,clubs_id
+games=>id,game_name,no_of_students,
+students_game_selections=>id,students_id,games_id
+games_equipments_allocated=>id,type_of_equipment,number_of_equipments,games_id
 
 subjects=>id ,subjects_name,no_of_students,departments_id
 schedule=>id,time,classes_id,subjects_id,employees_id
