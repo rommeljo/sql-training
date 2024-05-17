@@ -19,7 +19,7 @@ subjects=>id ,subjects_name,no_of_students,departments_id
 schedule=>id,time,classes_id,subjects_id,employees_id
 students_subject_selections=>id,students_id,subjects_id
 
-exams_type=>id,opener,mid_term,closing_exam
+exams_type=>id,exam_type,
 exams_results=>id,exam_type_id,students_id,subjects_id,marks,grade
 rankings=>id,overall_position,exam_type_id,students_id,overall_grade
 
